@@ -1,0 +1,10 @@
+services:
+  postgres:
+    container_name: 'ems-db'
+    image: 'postgres:latest'
+    environment:
+      - 'POSTGRES_DB=ems-db'
+      - 'POSTGRES_PASSWORD=password'
+      - 'POSTGRES_USER=ems'
+    ports:
+      - '5432:5432'
